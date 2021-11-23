@@ -11,9 +11,15 @@ def main():
     for i in range(0, len(buah)):
         print(buah[i])
 
-    print("\nPerintah del dengan list comprehension start")
+    print("\nPerintah del dengan list comprehension START:END")
     buah = ["Mangga", "Jeruk", "Melon", "Mangga"]
     del buah[0:-2]      # START:END
+    for i in range(0, len(buah)):
+        print(buah[i])
+
+    print("\nPerintah del dengan list comprehension START:END:STEP")
+    buah = ["Mangga", "Jeruk", "Melon", "Mangga"]
+    del buah[0::2]      # START:END:STEP
     for i in range(0, len(buah)):
         print(buah[i])
 
